@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Wheel Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="wheelCanvas" width="400" height="400"></canvas>
+    <div id="betButtons">
+        <button class="betButton" data-bet="10">Bet $10</button>
+        <button class="betButton" data-bet="25">Bet $25</button>
+        <button class="betButton" data-bet="50">Bet $50</button>
+    </div>
+    <div id="selectedBet">Selected Bet: $0</div>
+    <div id="numberButtons">
+        <!-- Buttons for each number will be added here dynamically -->
+    </div>
+    <div id="selectedNumber">Selected Number: None</div>
+    <button id="spinButton">Spin</button>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
