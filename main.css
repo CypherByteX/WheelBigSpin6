@@ -1,0 +1,41 @@
+#wheelCanvas {
+    border: 2px solid #000;
+    border-radius: 50%;
+    transition: transform 3s ease-out; /* Smooth transition */
+}
+
+.spin {
+    animation: spin 3s ease-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#betButtons, #numberButtons {
+    margin: 20px 0;
+}
+
+.betButton, .numberButton {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.betButton:hover, .numberButton:hover {
+    background-color: #2980b9;
+}
+
+#selectedBet, #selectedNumber {
+    margin: 10px 0;
+    font-size: 18px;
+}
